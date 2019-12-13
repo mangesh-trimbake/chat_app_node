@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+  <script defer src="script.js"></script>
+  <style >
+    #chat_form {
+      position: fixed;
+      padding-bottom: 30px;
+      bottom: 0;
+      background-color: white;
+      display: flex;
+    }
+  </style>
+</head>
+<body>
+
+
+
+<div class="container">
+
+  <h1>Group Chat</h1>
+  <div class="row">
+    <div class="col-sm-12" id="chat_messages" >
+
+
+    </div>
+
+  </div>
+
+
+
+  <div class="row">
+    <div class="col-sm-12"  >
+
+      <form id="chat_form" onsubmit="return false">
+
+        <div class="form-group">
+
+          <input type="text" class="form-control" id="chat_input" id="usr">
+          <button type="submit" name="button">Send</button>
+        </div>
+
+      </form>
+
+
+    </div >
+
+  </div>
+
+
+
+
+</div>
+
+</body>
+</html>
